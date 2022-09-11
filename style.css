@@ -20,6 +20,7 @@ main {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  font-family: var(--font-family);
 }
 
 .left {
@@ -55,18 +56,22 @@ main {
 }
 
 .card-content {
-  display: grid;
-  grid-template-rows: 1fr 2fr 1fr;
-  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 25px;
   position: absolute;
   top: 0;
 }
 
 .front-card-content-row:first-child {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  place-items: center;
+  display: flex;
+  align-items: center;
   gap: 10px;
+}
+
+.front-card-content-row:last-child {
+  margin-top: 70px;
 }
 
 #big-circle {
@@ -87,4 +92,24 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#card-number {
+  font-size: 1.5rem;
+  font-weight: var(--font-weight);
+  color: var(--white);
+  letter-spacing: 5px;
+}
+
+.card-owner-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.card-owner-details > span {
+  font-size: 0.7rem;
+  font-weight: var(--font-weight);
+  color: var(--light_grayish_violet);
+  letter-spacing: 2px;
 }
