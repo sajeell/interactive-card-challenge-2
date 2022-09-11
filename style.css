@@ -55,7 +55,7 @@ main {
   z-index: -1;
 }
 
-.card-content {
+.front-card-content {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -112,4 +112,18 @@ main {
   font-weight: var(--font-weight);
   color: var(--light_grayish_violet);
   letter-spacing: 2px;
+}
+
+.back-card-content {
+  top: 0;
+}
+
+#card-cvv {
+  font-size: 0.7em;
+  font-weight: var(--font-weight);
+  color: var(--light_grayish_violet);
+  letter-spacing: 2px;
+  top: 77%;
+  position: absolute;
+  right: 0;
 }
