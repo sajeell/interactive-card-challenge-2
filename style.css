@@ -25,10 +25,65 @@ main {
 .left {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  place-items: center;
 }
 
-.bg {
-  background: var(--gradiant);
+.bg img {
+  height: 100vh;
+  z-index: -1;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+}
+
+.card:first-child {
+  left: 20%;
+}
+
+.card:last-child {
+  margin-left: 30%;
+  margin-top: 20%;
+}
+
+.card-top {
+  z-index: -1;
+}
+
+.card-content {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+}
+
+.front-card-content-row:first-child {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  gap: 10px;
+}
+
+#big-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#small-circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid var(--white);
   display: flex;
   justify-content: center;
   align-items: center;
