@@ -200,13 +200,8 @@ main {
     flex-direction: column;
   }
 
-  .bg img {
-    height: 40vh;
-    width: 100vw;
-  }
-
   .card-top img {
-    width: 350px;
+    width: 280px;
   }
 
   .expiry-row {
@@ -221,6 +216,12 @@ main {
   .cards-wrapper {
     bottom: 55%;
     flex-direction: column-reverse;
+    max-width: 100vw;
+  }
+
+  .bg img {
+    height: 40vh;
+    width: 100vw;
   }
 
   .front {
@@ -237,17 +238,17 @@ main {
   }
 
   #big-circle {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
 
   #small-circle {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
   }
 
   #card-number {
-    font-size: 1.2rem;
+    font-size: 0.7rem;
     letter-spacing: 5px;
   }
 
@@ -256,11 +257,11 @@ main {
   }
 
   .front-card-content-row:last-child {
-    margin-top: 60px;
+    margin-top: 40px;
   }
 
   .card-owner-details > span {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
     letter-spacing: 1px;
   }
 
